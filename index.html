@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ECO: Save Green Valley - Grade 4</title>
+    <link rel="stylesheet" href="eco_escape_room.css">
+</head>
+
+<body>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+
+    <div class="wrap">
+        <div class="top">
+            <div class="brand">
+                <div class="eco-mini">🤖🌱</div>
+                    <div><b>ECO'S GREEN MISSION</b>
+                    <div class="small">Grade 4 Eco-Agents</div>
+                </div>
+            </div>
+
+            <div class="stars" id="stars">⭐ 0 / 4</div>
+        </div>
+
+        <div class="progress">
+            <div class="bar" id="bar"></div>
+        </div>
+
+        <section id="s0" class="screen active card hero">
+            <div class="stickers">🌳 🐝 ♻️ 💧 🌎</div>
+
+            <span class="tag">🎮 ECO ESCAPE ROOM</span>
+            <h1>Save Green Valley!</h1>
+
+            <div class="scene">
+                <div class="sun">☀️</div>
+                <div class="tree t1">🌳</div>
+                <div class="tree t2">🌲</div>
+                <div class="river"></div>
+                <div class="trash">🥤</div>
+                <div class="eco">🤖</div>
+                <div class="bubble">Hello, Eco-Agent! Green Valley needs YOU! 🌱</div>
+            </div>
+
+            <p>Four eco-crystals are hidden behind four challenges. Listen, write, solve clues and collect the secret code!</p>
+
+            <div>
+                <button id="startMissionBtn" class="btn">🚀 START MISSION</button>
+                <button id="watchIntroBtn" class="btn secondary">🎬 WATCH ECO</button>
+            </div>
+        </section>
+
+        <section id="s1" class="screen card">
+            <div class="mission">
+
+                <div class="challenge">
+                    <span class="tag">LEVEL 1 • LISTENING</span>
+                    <h2>💧 Rescue the River!</h2>
+
+                    <div class="scene">
+                        <div class="sun">☀️</div>
+                        <div class="tree t1">🌳</div>
+                        <div class="river"></div>
+                        <div class="trash">🧴🥤</div>
+                        <div class="eco">🤖</div>
+                        <div class="bubble">My river scanner found plastic! Listen to my message.</div>
+                    </div>
+
+                    <div class="meta">
+                        <b>Bloom:</b> Remember • 
+                        <b>Skill:</b> Listening for specific information
+                        <br><b>Goal:</b> identify the action that protects river water.
+                    </div>
+
+                    <button id="watchLevel1Btn" class="btn secondary">🎬 WATCH ECO'S MESSAGE</button>
+                    <button class="option" data-pick-level="1" data-correct="false">🗑️ A. Throw bottles into the river.</button>
+                    <button class="option" data-pick-level="1" data-correct="true">♻️ B. Put plastic bottles in the recycling bin.</button>
+                    <button class="option" data-pick-level="1" data-correct="false">🔥 C. Burn plastic near the river.</button>
+
+                    <div id="f1" class="feedback"></div>
+                    
+                    <button id="hint1Btn" class="btn purple">💡I NEED A CLUE</button>
+                    
+                    <div id="h1" class="hint">👂 Listen for the words 
+                        <b>plastic bottles</b> and
+                        <b>recycling</b>.
+                    </div>
+                </div>
+
+                <aside class="side">
+                    <h3>🔐 Secret Code</h3>
+                    <div class="codebox">
+                        <div class="digit" id="d1">?</div>
+                        <div class="digit">?</div>
+                        <div class="digit">?</div>
+                        <div class="digit">?</div>
+                    </div>
+
+                    <div class="stickers">💧🌱</div>
+                    
+                    <button id="n1" class="btn" disabled>NEXT ➜</button>
+                </aside>
+            </div>
+        </section>
+
+        <section id="s2" class="screen card">
+            <div class="mission">
+                <div class="challenge">
+                    <span class="tag">LEVEL 2 • WRITING</span>
+                    <h2>♻️ Fix the Recycling Machine!</h2>
+
+                    <div class="scene">
+                        <div style="position:absolute;left:8%;bottom:25px;font-size:95px">🗑️</div>
+                        <div style="position:absolute;left:32%;bottom:35px;font-size:55px">📄 🧴🫙</div>
+                        <div class="eco">🤖</div>
+                        <div class="bubble">The machine needs one magic eco-word!</div> 
+                    </div>
+
+                    <div class="meta">
+                        <b>Bloom:</b> Apply • 
+                        <b>Skill:</b> Writing vocabulary in context<br>
+                        <b>Goal:</b> complete an environmental instruction.
+                    </div>
+
+                    <div class="clue">We should ______ paper, glass, and plastic instead of throwing them away.</div>
+
+                    <input id="a2" placeholder="✏️ Type the missing word...">
+                        <button id="check2Btn" class="btn">🔎 CHECK</button>
+                        <button id="hint2Btn" class="btn purple">💡 CLUE</button>
+
+                    <div id="f2" class="feedback"></div>
+
+                    <div id="h2" class="hint">It starts with <b>R</b>: ♻️ R _ C Y C L E</div>
+                </div>
+
+                <aside class="side">
+                    <h3>🔐 Secret Code</h3>
+
+                    <div class="codebox">
+                        <div class="digit">7</div>
+                        <div class="digit" id="d2">?</div>
+                        <div class="digit">?</div>
+                        <div class="digit">?</div>
+                    </div>
+
+                    <button id="n2" class="btn" disabled>NEXT ➜</button>
+                </aside>
+            </div>
+        </section>
+
+        <section id="s3" class="screen card">
+            <div class="mission">
+                <div class="challenge">
+                    <span class="tag">LEVEL 3 • LISTENING</span>
+                    <h2>🌳 Bring Back the Park!</h2>
+
+                    <div class="scene">
+                        <div style="position:absolute;bottom:28px;left:20px;font-size:70px">🪵</div>                        
+                        <div style="position:absolute;bottom:35px;left:35%;font-size:55px">🐿️</div>                     
+                        <div class="eco">🤖</div>
+                        <div class="bubble">The animals are losing their home. Listen and choose the best solution!</div>
+                    </div>
+
+                    <div class="meta">
+                        <b>Bloom:</b> Analyze • 
+                        <b>Skill:</b> Cause and effect<br>
+                        <b>Goal:</b> connect a problem with a suitable community action.
+                    </div>
+                    
+                    <button id="watchLevel3Btn" class="btn secondary">🎬 WATCH ECO'S REPORT</button>
+                    <button class="option" data-pick-level="3" data-correct="false">🏗️ A. Cover the park with concrete.</button>
+                    <button class="option" data-pick-level="3" data-correct="false">🪓 B. Remove the remaining plants.</button>
+                    <button class="option" data-pick-level="3" data-correct="true">🌱 C. Plant native trees and care for them together.</button>
+
+                    <div id="f3" class="feedback"></div><button id="hint1Btn" class="btn purple">💡 I NEED A CLUE</button>
+
+                    <div id="h3" class="hint">🌳 Which answer gives animals more plants and homes?</div>
+                </div>
+                
+                <aside class="side">
+                    <h3>🔐 Secret Code</h3>
+                    
+                    <div class="codebox">
+                        <div class="digit">7</div>
+                        <div class="digit">3</div>
+                        <div class="digit" id="d3">?</div>
+                        <div class="digit">?</div>
+                    </div>
+                    
+                    <button id="n3" class="btn" disabled>NEXT ➜</button>
+                </aside>
+            </div>
+        </section>
+
+        <section id="s4" class="screen card">
+            <div class="mission">
+                <div class="challenge">
+                    <span class="tag">LEVEL 4 • WRITING</span>
+                    <h2>🌎 Make Your Eco-Promise!</h2>
+
+                    <div class="scene">
+                        <div style="position:absolute;left:8%;bottom:25px;font-size:75px">👧🏽🧒🏻👦🏾</div>
+                        <div style="position:absolute;left:35%;bottom:30px;font-size:60px">🌱🌳</div>
+                        <div class="eco">🤖</div>
+                        <div class="bubble">Your own idea can unlock the last crystal!</div> 
+                    </div>
+
+                    <div class="meta">
+                        <b>Bloom:</b> Create • 
+                        <b>Skill:</b> Complete sentence production<br>
+                        <b>Goal:</b> write one action your community can take to help the environment.
+                    </div>
+
+                <textarea id="a4" rows="4" placeholder="✏️ Example: We will plant trees in our school..."></textarea>
+                
+                <button id="check4Btn" class="btn">🌟 SEND MY PROMISE</button>
+                <button id="hint4Btn" class="btn purple">💡 WORD HELP</button>
+
+                <div id="f4" class="feedback"></div>
+                <div id="h4" class="hint">Choose: <b>reduce, reuse, recycle, protect, plant, save, clean</b> + something in nature.</div>           
+            </div>
+
+                <aside class="side">
+                    <h3>🔐 Secret Code</h3>
+
+                    <div class="codebox">
+                        <div class="digit">7</div>
+                        <div class="digit">3</div>
+                        <div class="digit">5</div>
+                        <div class="digit" id="d4">?</div>
+                    </div>
+                    
+                    <button id="n4" class="btn" disabled>FINAL LOCK ➜</button>
+                </aside>
+            </div>
+        </section>
+
+        <section id="s5" class="screen card hero">
+            <div class="stickers">🔐 🤖 🌱</div>
+            
+            <span class="tag">FINAL CHALLENGE</span>  
+            <h1>Activate Green Valley!</h1>         
+            <p>Type the four numbers you collected.</p>         
+
+            <div class="finalcode">7 3 5 2</div>
+            
+            <input id="final" maxlength="4" inputmode="numeric" placeholder="_ _ _ _" style="max-width:280px;margin:12px auto;text-align:center;font-size:30px">
+
+            <div>
+                <button id="finishBtn" class="btn">⚡ ACTIVATE!</button>
+            </div>
+
+            <div id="ff" class="feedback"></div>
+        </section>
+
+        <section id="s6" class="screen card hero">
+            <div class="stickers">🎉 🌳 🐝 🌈 🌎 🦋 🎉</div>
+                <h1>YOU SAVED GREEN VALLEY!</h1>
+
+                <div class="scene">
+                    <div class="sun">🌞</div>
+                    <div class="tree t1">🌳</div>
+                    <div class="tree t2">🌲</div>
+                    <div class="river"></div>
+                    <div style="position:absolute;left:45%;bottom:90px;font-size:45px">🦆🐟</div>
+                    <div class="eco">🤖</div>
+                    <div class="bubble">Amazing work, Eco-Agent! The valley is green again!</div>
+                </div>
+
+                <div class="certificate">
+                    <h2>🏆 ECO-AGENT CERTIFICATE</h2>
+                    <p>You listened, analyzed, wrote and created solutions to protect our planet.</p>
+                    <p><b>Secret code:</b> 7352</p>
+                </div>
+                
+                <button id="playAgainBtn" class="btn secondary">↻ PLAY AGAIN</button>
+        </section>
+    </div>
+    
+    <div id="ecoVideo" class="eco-video" aria-modal="true" role="dialog">
+        <div class="eco-stage">
+            <div class="eco-stage-top">
+                <span>📺 ECO-TV 
+                    <span id="ecoSpeaking" class="eco-speaking">ECO is  speaking</span>
+                </span>
+                
+                <button id="ecoCloseBtn" class="eco-close">✕ CLOSE</button>
+            </div>
+
+            <div class="eco-video-scene">
+                <div class="eco-video-sun">☀️</div>
+                <div class="eco-video-tree">🌳</div>
+
+                <div id="ecoBot" class="eco-bot">
+                    <div class="eco-head">
+                        <div class="eco-antenna"></div>
+                        <div class="eco-eye e1"></div>
+                        <div class="eco-eye e2"></div>
+                        <div class="eco-mouth"></div>
+                    </div>
+
+                    <div class="eco-body"></div>
+                    <div class="eco-arm a1"></div>
+                    <div class="eco-arm a2"></div>
+                </div>
+            </div>
+
+            <div id="ecoSubtitles" class="eco-subtitles">Press play to hear ECO.</div>
+
+            <div class="eco-video-controls">
+                <button id="ecoReplay" class="btn secondary">↻  REPLAY</button>
+                <button id="ecoContinueBtn" class="btn">✓ CONTINUE</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="eco_escape_room.js"></script>
+</body>
+
+</html>
